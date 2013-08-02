@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
 	  <title>DirtySix</title>
@@ -9,8 +10,16 @@
 	<body>
 		<div class="container">
 		<%= render 'layouts/header' %>
-		<%= yield %>
-		<%= render 'layouts/footer' %>
+			<div class="container-narrow">
+				<%= yield %>
+			</div>
 		</div>
 	</body>
+<body2>
+	<%= render 'layouts/collapse' %>
+	<div class="container">
+		<%= render 'layouts/footer' %>
+	</div>
+</body2>
+
 </html>
